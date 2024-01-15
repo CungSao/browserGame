@@ -1,0 +1,191 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+
+h1 {
+    color: red;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.blueText {
+    color: blue;
+}
+
+.redText {
+    color: red;
+}
+
+.large {
+    font-size: 60px;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+#wrapper {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#top {
+    height: 100px;
+    background: #bababa;
+    border-bottom: 1px solid black;
+}
+
+#main {
+    background: #dadada;
+    flex-grow: 1;
+    overflow-y: auto;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+#footer {
+    background: #bababa;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#accountOptions {
+    /*background:#fafafa;*/
+    height: 100%;
+    width: 25%;
+}
+
+#accountOptions button {
+    width: 100%;
+}
+
+.quarterWidth {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.gridBox {
+    width: 32%;
+    border: 1px solid black;
+    float: left;
+    height: 20%;
+    line-height: 100%;
+    text-align: center;
+}
+
+.gridBox:hover {
+    opacity: 0.5;
+}
+
+#boxHolder {
+    width: 80%;
+    margin: auto;
+}
+
+#buildingOptions {
+    display: none;
+    height: 100px;
+    width: 300px;
+    position: absolute;
+}
+
+.buildingBox {
+    width: 30%;
+    margin: 2px;
+    height: 100px;
+    text-align: center;
+    float: left;
+    background: white;
+    border: 1px solid black;
+}
+
+.gridPicture {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .characterSheet {
+        width: 100%;
+        float: none;
+    }
+
+    #createCharInfo {
+        display: none;
+    }
+
+    .leftChar {
+        display: none;
+    }
+
+    .rightChar {
+        width: 100%;
+    }
+}
+
+/* chưa xog */
+/* Character Sheet */
+.characterSheet select {
+    text-align: center;
+    text-align-last: center;
+}
+
+.characterPicture {
+    width: 15%;
+    height: 100px;
+    text-align: center;
+}
+
+.leftChar {
+    float: left;
+    width: 50%;
+    padding-left: 60px;
+}
+
+
+#charTable input {
+    width: 5%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.tooltipLeft {
+    display: inline;
+    position: relative;
+}
+
+.tooltipLeft:hover:after {
+    background: #333;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    top: 30px;
+    color: #fff;
+    content: attr(title);
+    left: 10px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 250px;
+}
+
+.tooltipHover:hover {
+    color: #fff;
+    cursor: pointer;
+}
