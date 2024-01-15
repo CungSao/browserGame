@@ -1,3 +1,9 @@
+<?php
+    if (isset($_GET['message'])) {
+        echo $_GET['message'] . "<br>";
+    }
+?>
+
 Please log in:
 
 <form action="?bPage=accountOptions&action=login&nonUI" method="post">
